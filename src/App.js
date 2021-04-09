@@ -11,7 +11,7 @@ const App = () => {
   const [source, setSource] = useState('');
 
   useEffect(() => {
-    const BASE_URL = 'http://newsapi.org/v2/top-headlines?'
+    const BASE_URL = 'https://newsapi.org/v2/top-headlines?'
     const searchSource = source ? `sources=${source}&` : ''
     const searchQuery = search ? `language=es&q=${search}&` : ''
     const apiKey = `apiKey=${API_KEY}`
